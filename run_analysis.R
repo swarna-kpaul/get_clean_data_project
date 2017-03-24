@@ -58,7 +58,7 @@ collist<-paste(collist[1:(length(collist)-2)],collapse=" ")
 SQLCMD=paste0("select ",collist," activity,subject from final_data group by activity,subject")
 final_data<-sqldf(SQLCMD)
 ############ Write the tidy data in a text file
-write.table(final_data,paste0(curr_dir,"/tidy_data.txt"))
+write.table(final_data,paste0(curr_dir,"/tidy_data.txt"),row.names=FALSE)
 }
 
 run_analysis()
