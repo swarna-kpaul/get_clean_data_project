@@ -3,6 +3,7 @@ This Repo contains the solution for the Course project of "Getting and Cleaning 
 
 To run the process execute the script run_analysis.R. 
 This script will download the required file and unzip it in the current directory. Then it will perform the analysis as per the problem statement and create a tidy data set. The tidy data set will be written in the file "tidy_data.txt" in the current directory.
+The script needs the package "sqldf" to be installed as a pre-requisite.
 
 The script is tested in R version 3.3.0 in "Red Hat Enterprise Linux Server release 6.6" 
 
